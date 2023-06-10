@@ -67,8 +67,8 @@ otherwise.
 
 ### Implementation
 
-The capabilities of this algorithm are described below as *correctly*, while the limitations are described as 
-*incorrectly*.
+The capabilities of this algorithm are described below as "*correctly*", while the limitations are described as 
+"*incorrectly*".
 
 Suppose Alice works from 8AM to 2PM (6 working hours).
 
@@ -85,7 +85,7 @@ Suppose Alice works from 8AM to 2PM (6 working hours).
     its timesheet.
   - If Alice was working remotely or had an external meeting outside the office, the algorithm is **incorrect**, since 
     it should have added some amount of time as a credit to its timesheet.
-  - If the employee was sick or with a justified absence, the algorithm is **correct**.
+  - If Alice was sick or with a justified absence, the algorithm is **correct**.
 
 - In a non-working day, Alice's location history shows that they were not present in the office. In this case, this 
   algorithm will ignore this day.
@@ -93,7 +93,7 @@ Suppose Alice works from 8AM to 2PM (6 working hours).
   - If Alice was working, the algorithm is **incorrect**, since it should have added some amount of time as a credit to 
     its timesheet.
 
-- In a non-working day, Alice's Google Maps location history reveals that they were physically present in the office. 
+- In a non-working day, Alice's location history reveals that they were physically present in the office. 
   In this case, this algorithm adds the amount of time Alice was in the office as a credit to its timesheet. 
   - If Alice was indeed working, the algorithm is **correct**.
   - If Alice was not engaged in their regular work activities and is instead participating in social events or 
